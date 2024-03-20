@@ -1,3 +1,8 @@
+# Folders
+[Bb]uild/
+[Dd]ebug/
+[Tt]mp/
+
 # Prerequisites
 *.d
 
