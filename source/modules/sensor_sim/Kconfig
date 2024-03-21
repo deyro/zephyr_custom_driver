@@ -1,0 +1,21 @@
+# Copyright (c) 2024 RD Technologies
+# SPDX-License-Identifier: MIT
+
+menuconfig SENSOR_SIM
+	bool "Enable simulation driver for a generic sensor"
+	help
+		Enable simulation driver for a generic sensor
+		
+if SENSOR_SIM
+
+module = SENSOR_SIM
+module-str = sensor_sim
+source "subsys/logging/Kconfig.template.log_config"
+
+config SENSOR_SIM_INIT_PRIORITY
+	int "SENSOR_SIM Init Priority"
+	default APPLICATION_INIT_PRIORITY 
+	help
+	    Device driver initialization priority.
+
+endif # SENSOR_SIM

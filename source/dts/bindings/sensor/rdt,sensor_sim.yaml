@@ -1,0 +1,19 @@
+# Copyright (c) 2024 RD Technologies
+# SPDX-License-Identifier: MIT
+
+description: |
+  Sensor simulation driver with dummy data
+
+  Example usage:
+  sensor_sim {
+    compatible = "rdt,sensor_sim";
+    sim-attr = <5>;
+  };
+
+compatible: "rdt,sensor_sim"
+
+properties:
+  sim-attr:
+    type: int
+    description: |
+      A random integer.
