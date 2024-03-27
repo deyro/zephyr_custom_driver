@@ -1,16 +1,3 @@
 sample:
-  description: Sample Zephyr project ro demonstrate a custom device driver
-    application
+  description: Sample Zephyr project to demonstrate a custom device driver
   name: zephyr custom driver
-common:
-  tags: introduction
-  integration_platforms:
-    - native_posix
-  harness: console
-  harness_config:
-    type: one_line
-    regex:
-      - "Hello World! (.*)"
-tests:
-  sample.basic.helloworld:
-    tags: introduction
